@@ -1,0 +1,154 @@
+body {
+  background: #000000d1;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.logo {
+  width: 150px;
+  transition: transform 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(0.7);
+  transition: transform 0.5s ease;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  border-radius: 24px;
+  background-color: #aaa5a554;
+  box-shadow: 4px 4px 40px rgba(0, 228, 253, 0.734);
+}
+
+main:hover {
+  box-shadow: 8px 8px 60px rgba(0, 228, 253, 0.734);
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+}
+
+.text-area {
+  width: calc(100% - 20px);
+  height: 250px;
+  padding: 10px;
+  border: 2px solid #44444445;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 24px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-shadow: 4px 4px 20px rgba(0, 242, 255, 0.436);
+  text-transform: uppercase;
+}
+::placeholder {
+  color: #ffffff;
+  text-align: center;
+}
+
+.message {
+  width: calc(90% - 30px);
+  height: 230px;
+  padding: 20px;
+  margin-left: 30px;
+  border: 2px solid #44444445;
+  color: #ffffff;
+  border-radius: 24px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0) url('/image/ast1.png') no-repeat center;
+  background-size: contain;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 20px rgba(0, 242, 255, 0.436);
+  cursor: none;
+}
+
+.message {
+  background-size: 40%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-encrypt,
+.btn-decrypt {
+  padding: 15px 40px;
+  border: 2px solid #1e1e1e45;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+  margin: 0 10px;
+  background-color: #ffffff;
+  color: #4444448e;
+  text-transform: uppercase;
+}
+
+.copy {
+  padding: 15px 40px;
+  border: 2px solid #1e1e1e45;
+  border-radius: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #4444448e;
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 220px;
+  text-transform: uppercase;
+}
+
+.btn-decrypt:hover,
+.btn-encrypt:hover,
+.copy:hover {
+  background-color: #44444435;
+  color: white;
+  transition: background-color 0.7s ease;
+}
+
+.information {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-area:focus {
+  outline: none;
+}
+
+.message:focus {
+  outline: none;
+}
+
+.text-area:hover {
+  box-shadow: 8px 8px 40px rgba(2, 244, 252, 0.416);
+}
+
+.message:hover {
+  box-shadow: 8px 8px 40px rgba(2, 244, 252, 0.416);
+}
